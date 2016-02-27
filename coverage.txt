@@ -1,0 +1,10 @@
+jonneff (master) WordUp $ nosetests --with-coverage --cover-package=app.helpers
+.........
+Name             Stmts   Miss  Cover   Missing
+----------------------------------------------
+app/helpers.py      22      3    86%   38-41
+----------------------------------------------------------------------
+Ran 9 tests in 0.028s
+
+OK
+jonneff (master) WordUp $
