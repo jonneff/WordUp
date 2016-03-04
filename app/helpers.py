@@ -20,7 +20,7 @@ class WordUp(object):
         body = re.sub("&lt;", "<", body)
         body = re.sub("&amp;", "&", body)
         body = re.sub("&nbsp;", " ", body)
-        body = re.sub("^\[deleted\]$", "", body) # Remove deleted
+        # body = re.sub("^\[deleted\]$", "", body) # [deleted] and [removed]: delete entire row from dataframe
         body = re.sub("http\S+", " ", body) # Remove URL
         body = re.sub("/r/\S+|/u/\S+", " ", body) # Remove /r/subreddit, /u/user
         # body = re.sub("(>.*?\\n\\n)+", " ", body) # Remove quoted comments
